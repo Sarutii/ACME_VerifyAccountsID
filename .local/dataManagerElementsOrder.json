@@ -1,0 +1,233 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dblSumAllTrans&Flowchart_1",
+        "strClientID&Flowchart_1",
+        "strAccountAmount&Flowchart_1",
+        "strAccountNumber&Flowchart_1",
+        "dtAllData&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME Web/ACMEWebSystem1_A-Open ACME Web Application.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolLoginPage&Sequence_3",
+        "boolDashboardPage&Sequence_12"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_DeskTop/ACMEAppSystem1_A-Open ACME Desktop App.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strPassword&Sequence_15",
+        "boolACME_System3&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_DeskTop/ACMEAppSystem1_B-Login to ACME Desktop App.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolPreCondition&Sequence_5",
+        "boolACME_System3&Sequence_5",
+        "strPassword&Sequence_15",
+        "boolWelcomePage&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME Web/ACMEWebSystem1_B-Login To System1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolPreCondition&Sequence_5",
+        "boolLoginPage&Sequence_5",
+        "strPassword&Sequence_17",
+        "boolDashboardPage&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME Web/ACMEWebSystem1_C-Access the Work items.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolPreCondition&Sequence_5",
+        "boolDashboardPage&Sequence_5",
+        "boolWorkItems&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME Web/ACMEWebSystem1_D-Scraping Data.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolPreCondition&Sequence_5",
+        "boolWorkItems&Sequence_5",
+        "ExtractDataTable&Sequence_4",
+        "boolPostCondition&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_dtAllData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME Web/ACMEWebSystem1_E-Filter Data.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolPostCondition&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_dtAllData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "For each.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolPreCondition&Sequence_5",
+        "WIID&Sequence_15",
+        "strAccountNumber&Sequence_15",
+        "strAccountAmount&Sequence_15",
+        "strClientID&Sequence_15",
+        "dblSumAllTrans&Sequence_15",
+        "boolPostCondition&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_dtFilterdData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME Web/ACMEWebSystem1_E-extract each user data.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolPostCondition&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_dtAllData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME Web/ACMEWebSystem1_F-NavigateToDetailsPage.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolWorkItemsDetails&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_CurrentRow"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME Web/ACMEWebSystem1_K-CompareAmountandTakeActions(Autosaved).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolPreCondition&Sequence_5",
+        "boolAccountMovementsPage&Sequence_5",
+        "strAllDataList&Sequence_4",
+        "dtAllDataInTable&Sequence_4",
+        "boolWorkItemDetailsPage&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_dblSumAllTrans",
+        "in_strAmountNumber"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME Web/ACMEWebSystem1_G-ReadDataFromDetails.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolPreCondition&Sequence_5",
+        "boolWorkItemsDetails&Sequence_5",
+        "strExtractedDetails&Sequence_4",
+        "Result&Sequence_4",
+        "strMatch&Sequence_4",
+        "strClientID&Sequence_4",
+        "boolPostCondition&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_strAccountNumber",
+        "out_strAccountAmount",
+        "out_strClientID"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME Web/ACMEWebSystem1_H-GoToUpdateWorkItem.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolWorkItemDetails&Sequence_5",
+        "strAllDataList&Sequence_4",
+        "dtAllDataInTable&Sequence_4",
+        "boolUpdateWorkItem&Sequence_19"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_DeskTop/ACMEAppSystem1_C-NavigateToSearchClientPage.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolWelcomePage&Sequence_5",
+        "boolSearchByIDPage&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_DeskTop/ACMEAppSystem1_H-Close All Opend Pages.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolAccountMovementsPage&Sequence_2",
+        "strFullText&Sequence_4",
+        "arrstrTextRows&Sequence_4",
+        "boolClientAcc&Sequence_4",
+        "boolClientDetails&Sequence_4",
+        "boolSearchByIDPage&Sequence_4",
+        "boolPostCondition&Sequence_3",
+        "boolWelcomePage&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
